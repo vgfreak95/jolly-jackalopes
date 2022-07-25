@@ -9,9 +9,16 @@ def say_name(name: str):
     """This will just give the users name back"""
     click.echo(f"Welcome {name}")
 
+
 @click.group()
 def cli():
+    """
+    This function acts as the cli tool group to add commands.
+    Having click this way allows us to use subcommands instead
+    of just one command.
+    """
     ...
+
 
 @cli.command()
 @click.option("--host", help="The host to run the server on")
