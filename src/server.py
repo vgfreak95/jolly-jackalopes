@@ -41,11 +41,13 @@ html = """
 
 @app.get("/")
 async def get():
+    """A getter function"""
     return HTMLResponse(html)
 
 
 @app.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):
+    """This will accept incoming connections"""
     await websocket.accept()
     while True:
         data = await websocket.receive_text()

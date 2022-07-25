@@ -14,8 +14,6 @@ def say_name(name: str):
 def cli():
     """
     This function acts as the cli tool group to add commands.
-    Having click this way allows us to use subcommands instead
-    of just one command.
     """
     ...
 
@@ -26,4 +24,7 @@ def cli():
 @click.option("--uses_https", help="This is your host name")
 @click.option("--dev_mode", help="This is your host name")
 def serve(host: str, port: int, uses_https: bool, dev_mode: bool):
+    """
+    This starts the server when the user calls this command
+    """
     uvicorn.run("server:app", port=port, log_level="info")
