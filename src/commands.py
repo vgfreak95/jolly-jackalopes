@@ -1,9 +1,6 @@
-"""
-
-"""
-
 import click
 import uvicorn
+
 
 # When the is ran as script accept args
 @click.command()
