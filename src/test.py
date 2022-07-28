@@ -7,7 +7,7 @@ def randomFile(number):
     except ValueError:
         return "Mismatched Input"
 
-    # s.chdir(os.path.dirname(os.path.abspath(__file__)))
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
     # change working directory to directory of test.py
     currentDir = os.getcwd()
     dirList1 = os.listdir(currentDir)
