@@ -22,4 +22,4 @@ def randomFile(number):
         output.append(f.read())
 
     return output
-    
+        
