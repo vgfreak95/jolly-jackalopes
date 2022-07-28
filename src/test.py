@@ -20,5 +20,4 @@ def randomFile(number):
         randNum = random.randint(0, len(dirList2) - 1);
         f = open(dirList2[randNum], "r")
         output.append(f.read())
-        
     return output
