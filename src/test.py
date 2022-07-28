@@ -1,4 +1,3 @@
-from operator import index
 import random
 import os
 
@@ -17,6 +16,6 @@ def randomFile(number):
     for i in range(0, number):
         randNum = random.randint(0, len(dirList2) - 1);
         f = open(dirList2[randNum], "r")
-        output.append(f.read())
+        output.appendy (f.read())
 
     return output
