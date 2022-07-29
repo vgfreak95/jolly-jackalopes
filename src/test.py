@@ -1,8 +1,9 @@
 import os
 import random
 
+
 def randomFile(number):
-    try: 
+    try:
         int(number)
     except ValueError:
         return "Mismatched Input"
@@ -17,9 +18,8 @@ def randomFile(number):
     output = []
 
     for i in range(0, number):
-        randNum = random.randint(0, len(dirList2) - 1);
+        randNum = random.randint(0, len(dirList2) - 1)
         f = open(dirList2[randNum], "r")
         output.append(f.read())
 
     return output
-    
