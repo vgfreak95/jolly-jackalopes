@@ -1,7 +1,8 @@
+import asyncio
+
+import aiohttp
 import click
 import uvicorn
-import aiohttp
-import asyncio
 
 
 # When the is ran as script accept args
